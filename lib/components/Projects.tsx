@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
   {
@@ -51,10 +51,12 @@ export default function Projects() {
             transition={{ duration: 0.5, delay: idx * 0.2 }}
             className="bg-black rounded-2xl overflow-hidden border-2 border-yellow-400 flex flex-col"
           >
-            <img
+            <Image
               src={proj.image}
               alt={proj.title}
-              className="w-full  object-cover rounded-t-2xl"
+              width={600}
+              height={300}
+              className="w-full object-cover rounded-t-2xl"
             />
             <div className="p-6 flex flex-col flex-1 justify-between">
               <div>
@@ -80,13 +82,15 @@ export default function Projects() {
       {/* Footer note with full-width photo */}
       <div className="mt-16 flex flex-col items-center gap-6">
         <p className="text-yellow-400 text-lg md:text-xl text-center max-w-3xl">
-         After a grueling backend study, I'm currently working on my first fullstack app.
+         After a grueling backend study, I&apos;m currently working on my first fullstack app.
         </p>
 
         <div className="w-full h-[400px] md:h-[500px] relative">
-          <img
-            src="/project1.png" // replace with your personal image
+          <Image
+            src="/project1.png"
             alt="Gabriel Okeke"
+            width={1200}
+            height={500}
             className="w-full h-full object-cover rounded-lg border-2 border-yellow-400"
           />
         </div>
