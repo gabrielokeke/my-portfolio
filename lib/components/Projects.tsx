@@ -102,14 +102,41 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="flex-1 w-full h-[300px] md:h-[400px] lg:h-[500px] relative">
-          <Image
-            src="/project1.png"
-            alt="Gabriel Okeke"
-            width={1200}
-            height={500}
-            className="w-full h-full object-cover rounded-lg border-2 border-yellow-400"
-          />
+        <div className="flex-1 w-full relative">
+          <div className="bg-black rounded-2xl overflow-hidden border-2 border-yellow-400 flex flex-col h-full">
+            <Image
+              src="/project1.png"
+              alt="Gabriel Okeke - Backend Journey"
+              width={600}
+              height={300}
+              className="w-full object-cover rounded-t-2xl"
+            />
+            <div className="p-6 flex flex-col flex-1 justify-between">
+              <div>
+                <h4 className="text-xl font-semibold text-yellow-400 mb-2">Fullstack Journey Project</h4>
+                <p className="text-gray-200 text-sm">My comprehensive fullstack application combining all the backend knowledge I&apos;ve gained with modern frontend technologies.</p>
+              </div>
+              <div className="mt-4 flex gap-4">
+                <Link
+                  href="https://example.com/fullstack-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-black bg-yellow-400 px-4 py-2 rounded-md hover:bg-yellow-300 transition-colors text-sm font-medium"
+                >
+                  Live <FaExternalLinkAlt />
+                </Link>
+                
+                <Link
+                  href="https://github.com/yourusername/fullstack-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-yellow-400 bg-transparent border-2 border-yellow-400 px-4 py-2 rounded-md hover:bg-yellow-400 hover:text-black transition-colors text-sm font-medium"
+                >
+                  GitHub <FaGithub />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
