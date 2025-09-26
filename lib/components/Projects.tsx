@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -11,24 +11,28 @@ const projects = [
     description: "A responsive web app built with Next.js and Tailwind CSS.",
     image: "/pic1.png", 
     live: "https://example.com/project1",
+    github: "https://github.com/yourusername/project1",
   },
   {
     title: "Project Two",
     description: "Interactive UI/UX design project with React and Framer Motion.",
     image: "/pic2.png",
     live: "https://example.com/project2",
+    github: "https://github.com/yourusername/project2",
   },
   {
     title: "Project Three",
     description: "A modern dashboard using Next.js, React, and Tailwind CSS.",
     image: "/pic3.png",
     live: "https://example.com/project3",
+    github: "https://github.com/yourusername/project3",
   },
   {
     title: "Project Four",
     description: "A creative personal portfolio showcasing frontend projects.",
     image: "/pic4.png",
     live: "https://example.com/project4",
+    github: "https://github.com/yourusername/project4",
   },
 ];
 
@@ -72,7 +76,15 @@ export default function Projects() {
                 >
                   Live <FaExternalLinkAlt />
                 </Link>
-
+                
+                <Link
+                  href={proj.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-yellow-400 bg-transparent border-2 border-yellow-400 px-4 py-2 rounded-md hover:bg-yellow-400 hover:text-black transition-colors text-sm font-medium"
+                >
+                  GitHub <FaGithub />
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -80,12 +92,17 @@ export default function Projects() {
       </div>
 
       {/* Footer note with full-width photo */}
-      <div className="mt-16 flex flex-col items-center gap-6">
-        <p className="text-yellow-400 text-lg md:text-xl text-center max-w-3xl">
-         After a grueling backend study, I&apos;m currently working on my first fullstack app.
-        </p>
+      <div className="mt-16 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+        <div className="flex-1 text-center lg:text-left">
+          <h3 className="text-yellow-400 text-2xl md:text-3xl font-bold mb-4">
+            Beyond the Frontend: My Backend Journey
+          </h3>
+          <p className="text-gray-200 text-base md:text-lg leading-relaxed">
+            After months of intensive backend development study, diving deep into server architecture, database design, API development, and cloud deployment strategies, I&apos;m now channeling all that knowledge into building my first comprehensive fullstack application. This journey has transformed me from a frontend-focused developer into a well-rounded engineer who understands the complete web development ecosystem, from user interfaces to server logic and everything in between.
+          </p>
+        </div>
 
-        <div className="w-full h-[400px] md:h-[500px] relative">
+        <div className="flex-1 w-full h-[300px] md:h-[400px] lg:h-[500px] relative">
           <Image
             src="/project1.png"
             alt="Gabriel Okeke"
