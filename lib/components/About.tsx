@@ -29,7 +29,7 @@ const AboutPage = () => {
       {/* About Write-up */}
       <div className="max-w-3xl mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400 mb-4">
-          About Me
+          About me
         </h2>
         <p className="text-white text-lg md:text-xl">
           Passionate about building seamless web experiences that combine clean

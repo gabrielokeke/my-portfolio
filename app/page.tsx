@@ -12,7 +12,7 @@ export default function Home() {
      <Hero/>
      <AboutPage/>
      <Skills/>
-     <div className="relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5"><Experience/></div>     
+     <div className="relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-3"><Experience/></div>     
      <Projects/>
      <Footer/>
     </main>

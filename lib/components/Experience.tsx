@@ -12,13 +12,15 @@ import {
 
 import { workExperience } from "@/data";
 import { Button } from "./ui/MovingBorders";
+import { SiNextdotjs } from "react-icons/si";
+import { FaRegLightbulb, FaRocketchat } from "react-icons/fa6";
 
 // Icon mapping for each experience
 const experienceIcons = {
-  1: FaReact,
+  1: SiNextdotjs,
   2: FaMobile,
   3: FaLaptopCode,
-  4: FaCode,
+  4: FaRocketchat,
 };
 
 // Alternative icons you can use:
@@ -28,7 +30,7 @@ const Experience = () => {
   return (
     <div className="py-20 px-6 md:px-16 lg:px-20 w-full bg-black">
       <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-center text-white">
-        My <span className="text-yellow-400">Work Experience</span>
+        My <span className="text-yellow-400">work experience</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
@@ -42,7 +44,7 @@ const Experience = () => {
               borderRadius="1.75rem"
               className="flex-1 text-black dark:text-white border-yellow-400 border-2 dark:border-slate-800"
             >
-              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+              <div className="flex flex-row lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-4">
                 <div className="flex md:flex-row flex-col items-center justify-center lg:w-32 md:w-20 w-16 lg:h-32 md:h-20 h-16">
                   <IconComponent 
                     className="text-yellow-400 lg:text-6xl text-center md:text-start md:text-4xl text-3xl"

@@ -22,7 +22,7 @@ export default function Skills() {
     <section id="skills" className="w-full py-20 px-6 md:px-16 bg-black text-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 text-white">
-          My {" "} <span className="text-yellow-400">Tech-stack</span>
+          My {" "} <span className="text-yellow-400">tech-stack</span>
         </h2>
 
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-8 justify-items-center">

@@ -3,9 +3,11 @@
 
 import { motion } from "framer-motion";
 import MagicButton from "./ui/MagicButton";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaLocationArrow } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaLocationArrow, FaRocketchat } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { FaDev } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   const footerLinks = {
@@ -34,17 +36,17 @@ export default function Footer() {
       >
              <div className="flex flex-col items-center">
         <TextGenerateEffect
-          words="Ready to take 'your' digital presence to the next level?"
+          words="Ready to take your digital presence to the next level?"
           className="text-center text-3xl font-bold leading-tight md:text-5xl lg:text-6xl text-blue-100"
         />
-        <p className="md:mt-5 font-bold text-yellow-400 my-5 text-center">
+        <p className="md:mt-5 font-bold text-white my-5 text-center">
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
         <a href="mailto:project.gabby84@gmail.com">
           <MagicButton
             title="Let's get in touch"
-            icon={<FaLocationArrow />}
+            icon={<FaRocketchat />}
             position="right"
           />
         </a>
@@ -57,15 +59,15 @@ export default function Footer() {
       <div className="flex mt-16 md:flex-row font-bold flex-col justify-between text-yellow-400 items-center">
         <p>&copy; {new Date().getFullYear()} Gabriel Okeke. All rights reserved.</p>
 
-        <div className="flex items-centerjustify-center md:gap-3 gap-8">
-            <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+        <div className="flex items-center justify-center md:gap-3 gap-8">
+            <a href="https://github.com/gabrielokeke" className="cursor-pointer">
               <FaGithub className="text-[25px]"/>
             </a>
-            <a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/gabby84/" className="cursor-pointer">
               <FaLinkedin className="text-[25px]"/>
             </a>
-            <a href="https://twitter.com/username" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="text-[25px]"/>
+            <a href="https://dev.to/okeke_gabriel_1471d2d2d12/" className="cursor-pointer">
+              <FaDev className="text-[25px]" />
             </a>
         </div>
       </div>

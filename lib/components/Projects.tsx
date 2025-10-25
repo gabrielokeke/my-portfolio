@@ -7,32 +7,32 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Project One",
-    description: "A responsive web app built with Next.js and Tailwind CSS.",
+    title: "Sushiman",
+    description: "A responsive minimalistic sushi advert app built with Vanilla HTML & CSS.",
     image: "/pic1.png", 
-    live: "https://example.com/project1",
+    live: "https://rainbow-crostata-5aff9a.netlify.app/",
     github: "https://github.com/yourusername/project1",
   },
   {
-    title: "Project Two",
-    description: "Interactive UI/UX design project with React and Framer Motion.",
+    title: "What is GPT3???",
+    description: "Interactive UI/UX design project with React and Tailwind CSS meant to show/emphasize the importance of GPT3 in our daily lives.",
     image: "/pic2.png",
-    live: "https://example.com/project2",
+    live: "https://monumental-jalebi-2a5bf2.netlify.app/",
     github: "https://github.com/yourusername/project2",
   },
   {
-    title: "Project Three",
-    description: "A modern dashboard using Next.js, React, and Tailwind CSS.",
+    title: "Putuk Truno Travel App",
+    description: "A minimalistic UI travel app.",
     image: "/pic3.png",
-    live: "https://example.com/project3",
+    live: "https://project-travel.netlify.app/",
     github: "https://github.com/yourusername/project3",
   },
   {
-    title: "Project Four",
-    description: "A creative personal portfolio showcasing frontend projects.",
-    image: "/pic4.png",
-    live: "https://example.com/project4",
-    github: "https://github.com/yourusername/project4",
+    title: "Jannie's Portfolio",
+    description: "A creative personal portfolio I made for a model showcasing her talent and achievements.",
+    image: "/pic6.png",
+    live: "https://jannie-portfolio.netlify.app/",
+    github: "https://github.com/gabrielokeke/jannie-portfolio",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function Projects() {
       {/* Footer note with full-width photo */}
       <div className="mt-16 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         <div className="flex-1 text-center lg:text-left">
-          <h3 className="text-yellow-400 text-2xl md:text-3xl font-bold mb-4">
+          <h3 className="text-yellow-400 underline text-2xl md:text-3xl font-bold mb-4">
             Beyond the Frontend: My Backend Journey
           </h3>
           <p className="text-gray-200 text-base md:text-lg leading-relaxed">
@@ -118,7 +118,7 @@ export default function Projects() {
               </div>
               <div className="mt-4 flex gap-4">
                 <Link
-                  href="https://example.com/fullstack-app"
+                  href="https://journal-flame.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-black bg-yellow-400 px-4 py-2 rounded-md hover:bg-yellow-300 transition-colors text-sm font-medium"
@@ -127,7 +127,7 @@ export default function Projects() {
                 </Link>
                 
                 <Link
-                  href="https://github.com/yourusername/fullstack-app"
+                  href="https://github.com/gabrielokeke/journal"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-yellow-400 bg-transparent border-2 border-yellow-400 px-4 py-2 rounded-md hover:bg-yellow-400 hover:text-black transition-colors text-sm font-medium"
